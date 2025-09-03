@@ -1,0 +1,750 @@
+# Auto-generated PHPStan configuration for EA Inspections rules
+# Generated on: Wed Sep  3 01:00:49 CEST 2025
+
+services:
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\AccessModifierPresentedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Deprecations\AliasFunctionsUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ForEach\AlterInForeachInspectorRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ForEach\AlterInForeachRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\AmbiguousMethodsCallsInArrayMappingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ArgumentUnpackingCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\ArrayIsListCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\ArrayPushMissUseRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ArraySearchLogicalUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\ArraySearchUsedAsInArrayRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\ArrayUniqueCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\AutoloadingIssuesRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\BacktickOperatorUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\BadExceptionsProcessingCatchRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\BadExceptionsProcessingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\BadExceptionsProcessingTryRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\CallableMethodValidityRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\CascadeStringReplacementRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\FileSystem\CascadingDirnameCallsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\CaseInsensitiveStringFunctionsMissUseRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ClassConstantCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ClassConstantUsageCorrectnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\ClassMethodNameMatchesFieldNameRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpUnit\ClassMockingCorrectnessRule
+        arguments:
+                    - @reflectionProvider
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\ClassOverridesFieldOfSuperClassRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\ClassReImplementsParentInterfaceRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\CompactArgumentsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\CompactCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\ComparisonOperandsOrderRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\ConstantCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\CryptographicallySecureAlgorithmsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\CryptographicallySecureRandomnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\CurlSslServerSpoofingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\DateTime\DateIntervalSpecificationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\DateTime\DateTimeConstantsUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\DateTimeSetFunctionUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\DateTime\DateTimeSetTimeUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\DateTime\DateUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalTransformations\DegradedSwitchRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\DeprecatedConstructorStyleRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\DeprecatedIniOptionsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\FileSystem\DirectoryConstantCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\DisallowWritingIntoStaticPropertiesRule
+        arguments:
+                    allowWriteFromSourceClass: false  # Disallow all static property writes
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ForEach\DisconnectedForeachInstructionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\DuplicateArrayKeysRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\DuplicatedCallInArrayMappingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Deprecations\DynamicCallsToScopeIntrospectionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\DynamicInvocationViaScopeResolutionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\EfferentObjectCouplingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ElvisOperatorCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\EmptyClassRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\EncryptionInitializationVectorRandomnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\FixedTimeStartWithRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\FileSystem\FopenBinaryUnsafeUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ForEach\ForeachInvariantsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Debug\ForgottenDebugOutputRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Deprecations\GetClassUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Debug\GetDebugTypeCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\GetTypeMissUseRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\HostnameSubstitutionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Ifs\IfReturnReturnSimplificationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\ImplodeArgumentsOrderRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\InArrayMissUseRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\IncorrectRandomRangeRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalTransformations\IncrementDecrementOperationEquivalentRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Loops\InfinityLoopRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\InstanceofCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Ifs\InvertedIfElseConstructsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\IsCountableCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\IsEmptyFunctionUsageRule
+        arguments:
+                    reportEmptyUsage: true
+                    suggestCountCheck: true
+                    suggestNullComparison: true
+                    suggestNullComparisonForScalars: true
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\IsIterableCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\IsNullFunctionUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\NullCoalescing\IssetArgumentExistenceRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\IssetConstructsCanBeMergedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\JsonThrowOnErrorRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\LongInheritanceChainRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Loops\LoopWhichDoesNotLoopRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\MagicMethods\MagicMethodsValidityRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\MisorderedModifiersRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\MissUsingParentKeywordRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Loops\MissingArrayInitializationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\MissingIssetImplementationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\MissingOrEmptyGroupStatementRule
+        arguments:
+                    reportEmptyBody: true
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\MkdirRaceConditionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Deprecations\MktimeUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpUnit\MockingMethodsCorrectnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\MultiAssignmentUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\NestedAssignmentsUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\NestedNotOperatorsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Ifs\NestedPositiveIfStatementsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\NoNestedTernaryRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\NonSecureParseStrUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\RegularExpressions\NotOptimalRegularExpressionsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Npe\NullPointerExceptionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\ObGetCleanCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\OffsetOperationsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\OneTimeUseVariablesRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\OnlyWritesOnParameterRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\OpAssignShortSyntaxRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PackedHashtableOptimizationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\ParameterDefaultValueIsNotNullRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\ByReference\PassingByReferenceCorrectnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Pdo\PdoApiUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpUnit\PhpUnitDeprecationsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpUnit\PhpUnitTestsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\PotentialMalwareRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\PowerOperatorCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\PregQuoteUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PreloadingUsageCorrectnessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\PrintfScanfArgumentsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\ProperNullCoalescingOperatorUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\PropertyCanBeStaticRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\PropertyInitializationFlawsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Deprecations\RandomApiMigrationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\FileSystem\RealpathInStreamContextRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\RedundantElseClauseRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\RedundantNullCoalescingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ReturnTypeCanBeDeclaredRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\SecurityAdvisoriesRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\SelfClassReferencingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\SenselessMethodDuplicationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\SenselessProxyMethodRule
+        arguments:
+                    - '@reflectionProvider'
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalTransformations\SenselessTernaryOperatorRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\ShortEchoTagCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\ShortListSyntaxCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\ShortOpenTagUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\SimpleXmlLoadFileUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\SlowArrayOperationsInLoopRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\StaticClosureCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\StaticInvocationViaThisRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\StaticLambdaBindingRule
+        arguments:
+                    - '@reflectionProvider'
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StrContainsCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StrEndsWithCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StrStartsWithCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StrStrUsedAsStrPosRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StrTrUsageAsStrReplaceRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StringCaseManipulationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StringNormalizationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\StringsFirstCharactersCompareRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\DateTime\StrtotimeUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\SubStrShortHandUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\SubStrUsedAsArrayAccessRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Strings\SubStrUsedAsStrPosRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SuspiciousAssignments\SuspiciousAssignmentsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\BinaryOperations\SuspiciousBinaryOperationRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\SuspiciousFunctionCallsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Loops\SuspiciousLoopRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\SuspiciousReturnRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\SuspiciousSemicolonRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\SwitchContinuationInLoopRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\TernaryOperatorSimplifyRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\ThrowRawExceptionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\TraitsPropertiesConflictsRule
+        arguments:
+                    - '@reflectionProvider'
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\Arrays\TypeUnsafeArraySearchRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\TypeUnsafeComparisonRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\TypesCastingCanBeUsedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnNecessaryDoubleQuotesRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\UnSafeIsSetOverArrayRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\UniqidMoreEntropyRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpDoc\UnknownInspectionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\PhpUnit\UnnecessaryAssertionRule
+        arguments:
+                    - '@reflectionProvider'
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnnecessaryCastingRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnnecessaryFinalModifierRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\UnnecessaryIssetArgumentsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnnecessarySemicolonRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnnecessaryUseAliasRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\UnqualifiedReferenceRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\UnserializeExploitsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\UnsetConstructsCanBeMergedRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\UnsupportedEmptyListAssignmentsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\UnsupportedStringOffsetOperationsRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\Security\UntrustedInclusionRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\UnusedClosureParameterRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\Classes\UnusedConstructorDependenciesRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnusedGotoLabelRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\UselessReturnRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\ApiUsage\UselessUnsetRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\UsingInclusionOnceReturnValueRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\UsingInclusionReturnValueRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\LanguageConstructions\VariableFunctionsUsageRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: macropage\PHPStan\Inspections\CodeStyle\MultipleReturnStatementsRule
+        arguments:
+            complainThreshold: 7
+            screamThreshold: 9
+        tags:
+            - phpstan.rules.rule

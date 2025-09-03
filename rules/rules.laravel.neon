@@ -1,0 +1,8 @@
+# Laravel-specific PHPStan rules
+# Contains Laravel-optimized adaptations of phpstan-inspections rules
+
+services:
+    -
+        class: macropage\PHPStan\Inspections\StaticInvocationViaThisLaravelRule
+        tags:
+            - phpstan.rules.rule

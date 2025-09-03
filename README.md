@@ -1,0 +1,61 @@
+# PHPStan Inspections
+
+This repository contains a set of PHPStan rules inspired by the popular PhpStorm plugin [PhpInspections (EA Extended)](https://github.com/kalessil/phpinspectionsea). Its goal is to bring the powerful static analysis capabilities of PhpInspections to the command line and your CI/CD pipeline through PHPStan.
+
+This allows you to find potential bugs, performance issues, and code style violations automatically, ensuring a higher code quality across your projects.
+
+## Installation
+
+To use these rules, require the package via Composer:
+
+```bash
+composer require --dev macropage/phpstan-inspections
+```
+
+PHPStan will automatically discover the extension via `phpstan/extension-installer`.
+
+## Usage
+
+Once installed, the rules are active by default. If you need to configure it manually, you can include the `rules.neon` file in your project's `phpstan.neon` configuration:
+
+```neon
+includes:
+    - vendor/macropage/phpstan-inspections/rules/rules.neon
+```
+
+### Laravel Support
+
+This package also includes rules specifically adapted for Laravel projects. For example, the `StaticInvocationViaThisLaravelRule` is optimized to work correctly with Laravel's Facades and Eloquent Models.
+
+To use the Laravel-specific rules, include the `rules.laravel.neon` file in your `phpstan.neon` instead:
+
+```neon
+includes:
+    - vendor/macropage/phpstan-inspections/rules/rules.laravel.neon
+```
+
+You can then run PHPStan as you normally would:
+
+```bash
+vendor/bin/phpstan analyse src tests
+```
+
+## Rule Set
+
+This package includes a wide variety of rules that check for:
+
+*   Architecture-related issues
+*   Potential bugs and logical errors
+*   Performance bottlenecks
+*   Code style and best practice violations
+*   Security vulnerabilities
+
+A complete list of all included rules can be found by browsing the `src/` directory.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or create an issue for any bugs or feature requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

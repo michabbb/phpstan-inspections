@@ -1,0 +1,33 @@
+{
+    "name": "macropage/phpstan-inspections",
+    "description": "A set of PHPStan rules inspired by PhpInspections (EA Extended) to help you find bugs and code smells in your PHP code.",
+    "type": "phpstan-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Micha(el) Bladowski",
+            "homepage": "https://github.com/michabbb"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "macropage\\PHPStan\\Inspections\\": "src/"
+        }
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "rules/rules.neon"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
