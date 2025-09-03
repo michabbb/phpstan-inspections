@@ -66,6 +66,10 @@ This package includes a wide variety of rules that check for:
 
 A complete list of all included rules can be found by browsing the `src/` directory.
 
+## Acknowledgements
+
+This project would not be possible without the incredible work done by Vladimir Reznichenko (@kalessil) on the original [PhpInspections (EA Extended)](https://github.com/kalessil/phpinspectionsea) plugin for PhpStorm. All the logic and inspiration for these rules come from that project.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or create an issue for any bugs or feature requests.
