@@ -686,6 +686,10 @@ services:
         tags:
             - phpstan.rules.rule
     -
+        class: macropage\PHPStan\Inspections\CodeStyle\UnusedUseStatementRule
+        tags:
+            - phpstan.rules.rule
+    -
         class: macropage\PHPStan\Inspections\ApiUsage\UnqualifiedReferenceRule
         tags:
             - phpstan.rules.rule
