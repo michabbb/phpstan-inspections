@@ -726,6 +726,10 @@ services:
         tags:
             - phpstan.rules.rule
     -
+        class: macropage\PHPStan\Inspections\SemanticalAnalysis\UnusedFunctionParameterRule
+        tags:
+            - phpstan.rules.rule
+    -
         class: macropage\PHPStan\Inspections\SemanticalAnalysis\UselessReturnRule
         tags:
             - phpstan.rules.rule
