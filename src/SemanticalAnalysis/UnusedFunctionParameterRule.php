@@ -141,7 +141,44 @@ class UnusedFunctionParameterRule implements Rule
                     $this->usedVariableNames[$node->var->name] = true;
                 }
 
+                // Track variable usage in compact() function calls
+                if ($node instanceof Node\Expr\FuncCall &&
+                    $node->name instanceof Node\Name &&
+                    strtolower($node->name->toString()) === 'compact') {
+                    $this->processCompactCall($node);
+                }
+
                 return null;
+            }
+
+            /**
+             * Process compact() function call arguments to extract used variable names.
+             */
+            private function processCompactCall(Node\Expr\FuncCall $funcCall): void
+            {
+                foreach ($funcCall->getArgs() as $arg) {
+                    $this->extractVariableNamesFromCompactArg($arg->value);
+                }
+            }
+
+            /**
+             * Extract variable names from compact() arguments recursively.
+             */
+            private function extractVariableNamesFromCompactArg(Node $node): void
+            {
+                if ($node instanceof Node\Scalar\String_) {
+                    // String literal argument: compact('varname')
+                    $this->usedVariableNames[$node->value] = true;
+                } elseif ($node instanceof Node\Expr\Array_) {
+                    // Array argument: compact(['var1', 'var2'])
+                    foreach ($node->items as $item) {
+                        if ($item !== null && $item->value !== null) {
+                            $this->extractVariableNamesFromCompactArg($item->value);
+                        }
+                    }
+                }
+                // Note: We don't handle dynamic variable names (e.g., compact($varName))
+                // as they cannot be statically analyzed reliably
             }
         };
 

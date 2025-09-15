@@ -156,3 +156,27 @@ function testUsedInCompoundAssignment(int $base, int $increment): int
     $base += $increment;
     return $base;
 }
+
+// Function with parameter used in compact() - should not trigger
+function testUsedInCompact(string $customer, string $sku, bool $debug): array
+{
+    return compact('customer', 'sku');
+    // $debug is unused and should still trigger error
+}
+
+// Method with parameters used in compact() with array - should not trigger for customer/sku
+class TestCompactUsage
+{
+    public function methodWithCompactArray(string $customer, string $sku, string $unused): array
+    {
+        return compact(['customer', 'sku']);
+        // $unused should trigger error
+    }
+
+    // Method with mixed compact() usage - should not trigger for used parameters
+    public function methodWithMixedCompact(string $var1, string $var2, string $var3, string $unused): array
+    {
+        return compact('var1', ['var2', 'var3']);
+        // $unused should trigger error
+    }
+}
