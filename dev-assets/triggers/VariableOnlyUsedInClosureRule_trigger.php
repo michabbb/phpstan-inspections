@@ -171,8 +171,8 @@ class TestClass
 
 function testMultipleUseClauses(): void
 {
-    $var1 = 'VAR1'; // Should trigger error
-    $var2 = 'VAR2'; // Should NOT trigger - used in multiple places
+    $var1 = 'VAR1'; // Should trigger error - only used in one closure
+    $var2 = 'VAR2'; // Should NOT trigger - used in multiple closures
 
     $closure1 = function($item) use ($var1, $var2) {
         return $item . $var1 . $var2;
@@ -184,6 +184,26 @@ function testMultipleUseClauses(): void
 
     $closure1('test');
     $closure2('test');
+}
+
+function testLogChannelScenario(): void
+{
+    // Similar to amazon.php $logChannel case - should NOT trigger
+    $logChannel = config('app.env') === 'local' ? 'stack' : 'requests';
+
+    $connector = new stdClass();
+
+    // First closure - debugRequest
+    $connector->debugRequest = function($request) use ($logChannel) {
+        echo "Debug request to channel: " . $logChannel;
+        return $request;
+    };
+
+    // Second closure - debugResponse
+    $connector->debugResponse = function($response) use ($logChannel) {
+        echo "Debug response to channel: " . $logChannel;
+        return $response;
+    };
 }
 
 function testConditionalUsage(): void

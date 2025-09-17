@@ -161,6 +161,12 @@ class VariableOnlyUsedInClosureRule implements Rule
             return false;
         }
 
+        // If variable is used in multiple closures, it makes sense to keep it outside
+        // to avoid code duplication - don't flag this case
+        if (count($closuresUsingVariable) > 1) {
+            return false;
+        }
+
         // Check if variable is used anywhere outside the closures that use it
         $allVariableUsages = $nodeFinder->find($statements, static function (Node $node) use ($varName): bool {
             return $node instanceof Variable &&
