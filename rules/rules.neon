@@ -594,6 +594,10 @@ services:
         tags:
             - phpstan.rules.rule
     -
+        class: macropage\PHPStan\Inspections\SuspiciousAssignments\VariableOnlyUsedInClosureRule
+        tags:
+            - phpstan.rules.rule
+    -
         class: macropage\PHPStan\Inspections\SemanticalAnalysis\BinaryOperations\SuspiciousBinaryOperationRule
         tags:
             - phpstan.rules.rule
